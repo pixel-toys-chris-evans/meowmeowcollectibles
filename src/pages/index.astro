@@ -1,0 +1,134 @@
+---
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Meow Meow Collectibles</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <img src="/android-chrome-192x192.png" width="192" height="192" />
+      <h1>Meow Meow Collectibles</h1>
+      <p>
+        "Meow Meow Collectibles" is a unique NFT collection that features cute
+        and charming cartoon cats, each with their own special collectible card
+        game traits. These digital cats are not only adorable, but also have
+        varying rarity levels and special abilities that can be used in the
+        accompanying card game. With a limited supply of each cat, owning a Meow
+        Meow Collectible is not only a fun way to enjoy the world of NFTs and
+        blockchain technology, but also a valuable addition to any collection.
+      </p>
+      <div class="callout">
+        <h2>Notice</h2>
+        <p>
+          Please note that "Meow Meow Collectibles" is a fictional NFT
+          collection created for testing and demonstration purposes only. It is
+          not a real collection that is available for purchase or investment.
+          Any tokens or digital assets bearing the "Meow Meow Collectibles" name
+          that may be found online are likely part of a simulation or test
+          environment, and have no actual value or utility. Therefore, we
+          strongly advise users to exercise caution and not engage in any
+          transactions related to this collection outside of a test or
+          experimental context.
+        </p>
+        <a href="/nft/render/1" class="link">View Collectibles</a>
+      </div>
+      <a href="https://testnets.opensea.io/collection/meowmeow-ccg-1">
+        View on OpenSea Testnets
+      </a>
+      <section class="made-with-section">
+        <h3 class="made-with-title">Made With</h3>
+        <div class="made-with">
+          <figure>
+            <img src="/midjourney.jpg" width="64" height="64" class="rounded" />
+            <figcaption>Midjourney</figcaption>
+          </figure>
+          <figure>
+            <img src="/chatgpt.svg" width="64" height="64" />
+            <figcaption>ChatGPT</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <style is:global>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        font-family: "Fredoka", sans-serif;
+        background-color: #f3efe0;
+        font-size: 16px;
+      }
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column nowrap;
+        gap: 2rem;
+        padding: 4rem;
+        max-width: 1110px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .made-with-section {
+        margin-top: 2rem;
+      }
+      .made-with-title {
+        margin: 0 0 2rem;
+        text-align: center;
+      }
+      .made-with {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 2rem;
+      }
+      .made-with > figure {
+        width: fit-content;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0.5rem;
+        align-items: center;
+        margin: 0;
+      }
+      .rounded {
+        border-radius: 1rem;
+      }
+      .callout {
+        display: block;
+        padding: 1rem 2rem;
+        background-color: #f1c76c;
+        border-radius: 1rem;
+        position: relative;
+      }
+      .link {
+        position: absolute;
+        display: inline-block;
+        text-decoration: none;
+        color: #ebb02d;
+        background-color: #2f2309;
+        border-radius: 0.5rem;
+        font-weight: 700;
+        font-size: 1.25rem;
+        padding: 0.5rem 1.5rem;
+        inset: auto -1rem -1rem auto;
+      }
+    </style>
+  </body>
+</html>

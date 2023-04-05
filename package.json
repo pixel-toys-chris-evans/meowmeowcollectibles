@@ -1,0 +1,25 @@
+{
+  "name": "nft-site",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^6.2.2",
+    "@astrojs/node": "^5.1.0",
+    "@astrojs/react": "^2.1.1",
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "astro": "^2.1.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "wrangler": "^2.14.0"
+  }
+}
