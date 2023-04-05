@@ -49,9 +49,6 @@ const personality = data.attributes.find(
     />
   </head>
   <body>
-    <a href="/"
-      ><img src="/android-chrome-512x512.png" width="64" height="64" /></a
-    >
     <figure
       class:list={[
         "figure",
@@ -95,12 +92,14 @@ const personality = data.attributes.find(
         justify-content: center;
         flex-flow: column nowrap;
         gap: 2rem;
-        padding: 4rem;
+        padding: 1rem;
+        margin: 0;
         min-height: 100%;
       }
       .figure {
         display: block;
-        width: 384px;
+        width: 100%;
+        max-width: 384px;
         aspect-ratio: 1/1;
         border-radius: 1rem;
         position: relative;
