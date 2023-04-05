@@ -66,21 +66,6 @@ const personality = data.attributes.find(
         {category}
       </span>
     </figure>
-    <menu class="menu">
-      <li><a href="/nft/render/0">1</a></li>
-      <li><a href="/nft/render/1">2</a></li>
-      <li><a href="/nft/render/2">3</a></li>
-    </menu>
-    <div class="code-wrapper">
-      <pre
-        class="pre"><code class="code">{JSON.stringify(data, null, 4)}</code></pre>
-      <a
-        class="metadata-link"
-        href={metadata_url}
-        target="_blank"
-        rel="noreferrer">Link to IPFS Metadata</a
-      >
-    </div>
     <style is:global>
       * {
         box-sizing: border-box;
@@ -97,57 +82,6 @@ const personality = data.attributes.find(
         flex-flow: column nowrap;
         gap: 2rem;
         padding: 4rem;
-      }
-      .menu {
-        display: flex;
-        flex-flow: row nowrap;
-        list-style: none;
-        gap: 1rem;
-      }
-      .menu > li {
-        width: 48px;
-        aspect-ratio: 1 / 1;
-        background-color: #2f2309;
-        border-radius: 0.5rem;
-        font-weight: 700;
-        font-size: 1.25rem;
-      }
-      .menu > li > a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        aspect-ratio: 1 / 1;
-        text-decoration: none;
-        color: #ebb02d;
-      }
-      .code-wrapper {
-        display: block;
-        position: relative;
-      }
-      .metadata-link {
-        position: absolute;
-        background-color: #ebb02d;
-        padding: 0.5rem 1.5rem;
-        border-radius: 0.5rem;
-        font-weight: 700;
-        color: #2f2309;
-        text-decoration: none;
-        font-size: 1.25rem;
-        inset: auto -1rem -0.5rem auto;
-      }
-      .pre {
-        max-width: 768px;
-        width: 100%;
-        overflow: auto;
-        padding: 2rem;
-        border-radius: 1rem;
-        background-color: #fff;
-      }
-      .code {
-        width: 100%;
-        overflow-wrap: break-word;
-        white-space: pre-wrap;
       }
       .figure {
         display: block;
