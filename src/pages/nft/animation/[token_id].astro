@@ -66,8 +66,8 @@ const personality = data.attributes.find(
       data-tilt-perspective="1000"
     >
       <img src={data.image} class="image" />
+      <img src={`/personality-${personality}.svg`} class="personality" />
       <figcaption class="caption">
-        <img src={`/personality-${personality}.svg`} class="personality" />
         <span>{data.name}</span>
       </figcaption>
       <span class:list={["category", category]}>
@@ -99,6 +99,7 @@ const personality = data.attributes.find(
       .figure {
         display: block;
         width: 100%;
+        min-width: 320px;
         max-width: 384px;
         aspect-ratio: 1/1;
         border-radius: 1rem;
@@ -114,13 +115,14 @@ const personality = data.attributes.find(
         position: absolute;
         width: 64px;
         aspect-ratio: 1 / 1;
-        inset: 50% auto auto -1rem;
-        transform: translate3d(-100%, -50%, 0);
+        inset: 1rem auto auto 1rem;
+        transform: rotate3d(0, 0, 1, -15deg);
       }
       .caption {
         display: block;
         position: absolute;
-        inset: auto auto -1rem -1.5rem;
+        inset: auto auto 0 50%;
+        transform: translate3d(-50%, 35%, 0);
         font-weight: 700;
         color: #fff;
         text-decoration: none;
