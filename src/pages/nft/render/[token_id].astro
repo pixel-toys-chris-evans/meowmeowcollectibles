@@ -26,6 +26,7 @@ const category = data.attributes.find(
 const personality = data.attributes.find(
   (v) => v.trait_type === "personality"
 )?.value;
+const mask_image = `url("/${parseInt(token_id) + 1}_mask.png")`;
 ---
 
 <html>
@@ -92,7 +93,7 @@ const personality = data.attributes.find(
         rel="noreferrer">Link to IPFS Metadata</a
       >
     </div>
-    <style is:global>
+    <style define:vars={{ ["mask-image"]: mask_image }}>
       * {
         box-sizing: border-box;
       }
@@ -226,6 +227,10 @@ const personality = data.attributes.find(
         transition: all 0.33s ease;
         mix-blend-mode: color-dodge;
         opacity: 0.75;
+        mask-image: var(--mask-image);
+        mask-size: 100% 100%;
+        -webkit-mask-image: var(--mask-image);
+        -webkit-mask-size: 100% 100%;
       }
       .category {
         display: block;
